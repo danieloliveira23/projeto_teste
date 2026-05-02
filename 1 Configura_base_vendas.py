@@ -47,6 +47,9 @@ df.rename(columns={"Mês": "Mês"}, inplace=True)
 df.rename(columns={"Pecas": "Pecas"}, inplace=True)
 df.rename(columns={"Valor": "Valor"}, inplace=True)
 
+
+print("teste qualquer alteracao")
+
 df = df.loc[df["Tipord"] != "ZEXF"]
 df = df.loc[:, ["Can","Artigo","Tamanho","Ordem","Tipord","Esc","Sit","Mês","Embarque","Colecao","Neg","Pecas","Valor"]]
 df['Sit'] = df['Sit'].replace(['Cliente Fictício'], 'Suspenso Comercial')
